@@ -1123,7 +1123,7 @@
                   "type": "SetVariable",
                   "inputs": {
                     "name": "BackupInstanceVisual",
-                    "value": "<div>\n<h3>Backup Instances Trend</h3>\n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-BackupInstanceTrend')?['attachmentName']}\" width:\"50px\"/>\n<br>\n<h3> Cloud Storage Trend</h3> \n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-BackupInstanceTabCloudStorageTrend')?['attachmentName']}\" width:\"50px\"/>\n<br>\n</div>"
+                    "value": "<div>\n<h3>Backup Instances Trend</h3>\n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-BackupInstanceTrend')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n<h3> Cloud Storage Trend</h3> \n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-BackupInstanceTabCloudStorageTrend')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n</div>"
                   }
                 },
                 "Set_variable-JobEmailBodyForSuccessfulRun": {
@@ -1135,7 +1135,7 @@
                   "type": "SetVariable",
                   "inputs": {
                     "name": "JobVisual",
-                    "value": "<div>\n<h3> Jobs by Status </h3>\n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-JobStatus')?['attachmentName']}\" width:\"50px\"/>\n<br>\n<h3> Jobs by JobOperation </h3>\n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-JobOperation')?['attachmentName']}\" width:\"50px\"/>\n<br>\n<h3> Jobs by Failure Code</h3> \n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-JobFailureCode')?['attachmentName']}\" width:\"50px\"/>\n<br>\n</div>"
+                    "value": "<div>\n<h3> Jobs by Status </h3>\n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-JobStatus')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n<h3> Jobs by JobOperation </h3>\n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-JobOperation')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n<h3> Jobs by Failure Code</h3> \n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-JobFailureCode')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n</div>"
                   }
                 }
               },
@@ -1393,7 +1393,7 @@
                   "type": "SetVariable",
                   "inputs": {
                     "name": "BillingGroupVisual",
-                    "value": "<div>\n<h3>Protected Instances Trend</h3>\n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-BillingGroupTrend')?['attachmentName']}\" width:\"50px\"/>\n<br>\n<h3> Cloud Storage Trend</h3> \n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-BillingGroupTabCloudStorageTrend')?['attachmentName']}\" width:\"50px\"/>\n<br>\n</div>"
+                    "value": "<div>\n<h3>Protected Instances Trend</h3>\n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-BillingGroupTrend')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n<h3> Cloud Storage Trend</h3> \n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-BillingGroupTabCloudStorageTrend')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n</div>"
                   }
                 },
                 "Set_variable-PolicyAdherenceEmailBodyForSuccessfulRun": {
@@ -1622,7 +1622,7 @@
                   "type": "SetVariable",
                   "inputs": {
                     "name": "PoliciesVisual",
-                    "value": "<div>\n<h3>Active Policy Trend</h3>\n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-PolicyTrend')?['attachmentName']}\" width:\"50px\"/>\n<br>\n<h3> Cloud Storage Trend</h3> \n<br>\n<img src=\"cid:@{body('Run_query_and_visualize_results-PolicyTabCloudStorageTrend')?['attachmentName']}\" width:\"50px\"/>\n<br>\n</div>"
+                    "value": "<div>\n<h3>Active Policy Trend</h3>\n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-PolicyTrend')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n<h3> Cloud Storage Trend</h3> \n<br>\n<img src=\"data:image/jpeg;base64,@{body('Run_query_and_visualize_results-PolicyTabCloudStorageTrend')?['attachmentContent']}\" width=\"50px\"/>\n<br>\n</div>"
                   }
                 }
               },
